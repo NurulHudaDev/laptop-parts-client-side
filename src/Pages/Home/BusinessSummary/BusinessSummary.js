@@ -22,8 +22,8 @@ const BusinessSummary = () => {
             </svg>
           </div>
           <div className="stat-title">Total Reviews</div>
-          <div className="review stat-value">55.6K</div>
-          <div className="stat-desc">21% more than last month</div>
+          <div className="review stat-value">58.8K</div>
+          <div className="stat-desc">22% more than last month</div>
         </div>
 
         <div className="stat">
@@ -43,16 +43,16 @@ const BusinessSummary = () => {
             </svg>
           </div>
           <div className="stat-title">Customers</div>
-          <div className="stat-value text-secondary">2.6M</div>
+          <div className="stat-value customers">4.6M</div>
         </div>
 
         <div className="stat">
           <div className="stat-figure text-secondary">
             <div className="avatar online"></div>
           </div>
-          <div className="stat-value">500+</div>
+          <div className="stat-value">600+</div>
           <div className="stat-title">Tools & Parts</div>
-          <div className="stat-desc text-secondary">Upcoming</div>
+          <div className="stat-desc tools">Upcoming</div>
         </div>
         <div className="stat">
           <div className="stat-figure text-secondary">
@@ -62,10 +62,10 @@ const BusinessSummary = () => {
               </div>
             </div>
           </div>
-          <div className="stat-value">10000$</div>
+          <div className="stat-value">20000$</div>
           <div className="stat-title">Annual Revenue</div>
-          <div className="stat-desc text-secondary">
-            Total revenue 19999999999999999+
+          <div className="stat-desc total-revenue">
+            Total revenue 28888888888888888+
           </div>
         </div>
         <div className="stat">
@@ -85,8 +85,8 @@ const BusinessSummary = () => {
             </svg>
           </div>
           <div className="stat-title">New Registers</div>
-          <div className="stat-value">1,200</div>
-          <div className="stat-desc">↘︎ 90 (14%)</div>
+          <div className="stat-value">2,400</div>
+          <div className="stat-desc">↘︎ 92 (15%)</div>
         </div>
       </div>
     </div>

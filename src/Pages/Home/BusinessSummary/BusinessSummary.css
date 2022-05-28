@@ -4,5 +4,14 @@
     margin: 40px 0px;
 }
 .review{
-    color: #f96226;
+    color: #35b2ff;
+}
+.customers{
+    color: rgb(255, 193, 78);
+}
+.tools{
+    color: rgb(255, 132, 0);
+}
+.total-revenue{
+    color: rgb(255, 132, 0);
 }
