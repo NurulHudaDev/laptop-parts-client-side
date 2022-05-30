@@ -5,7 +5,7 @@ const DeleteConfirmModal = ({deletingOrder,handleDelete}) => {
     console.log(deletingOrder._id)
 
     // const handleDelete = id => {
-    //     fetch(`http://localhost:5000/order/${id}`,{
+    //     fetch(`https://dry-hamlet-93719.herokuapp.com/order/${id}`,{
     //       method: 'DELETE',
     //       headers: {
     //         'authorization': `Bearer ${localStorage.getItem("accessToken")}`,

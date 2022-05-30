@@ -13,7 +13,7 @@ const Purchase = () => {
   // const [quantity, setQuantity] = useState(0);
   
   useEffect(() => {
-    const url = `http://localhost:5000/item/${id}`;
+    const url = `https://dry-hamlet-93719.herokuapp.com/item/${id}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setItem(data));
@@ -25,7 +25,7 @@ const Purchase = () => {
   const onSubmit = (data, e) => {
     data.item = item;
     console.log(data);
-    const url = `http://localhost:5000/order`;
+    const url = `https://dry-hamlet-93719.herokuapp.com/order`;
     fetch(url, {
       method: "POST",
       headers: {

@@ -17,7 +17,7 @@ const AddProduct = () => {
     data.email = user?.email;
 
     console.log(data);
-    const url = `http://localhost:5000/item`;
+    const url = `https://dry-hamlet-93719.herokuapp.com/item`;
     fetch(url, {
       method: "POST",
       headers: {

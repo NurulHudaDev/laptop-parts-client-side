@@ -14,7 +14,7 @@ const MyOrder = () => {
 
   useEffect(() => {
     if (user) {
-      fetch(`http://localhost:5000/order?email=${user.email}`, {
+      fetch(`https://dry-hamlet-93719.herokuapp.com/order?email=${user.email}`, {
         method: "GET",
         headers: {
           'authorization': `Bearer ${localStorage.getItem("accessToken")}`,
@@ -33,7 +33,7 @@ const MyOrder = () => {
   }, [navigate, user]);
 
   const handleDelete = id => {
-    fetch(`http://localhost:5000/order/${id}`,{
+    fetch(`https://dry-hamlet-93719.herokuapp.com/order/${id}`,{
       method: 'DELETE',
       headers: {
         'authorization': `Bearer ${localStorage.getItem("accessToken")}`,
@@ -96,10 +96,3 @@ const MyOrder = () => {
 };
 
 export default MyOrder;
-
-// method: 'GET',
-// headers: {
-//     authorization: `Bearer ${localStorage.getItem("accessToken")}`,
-//   },
-
-// fetch(`http://localhost:5000/order?email=${user.email}

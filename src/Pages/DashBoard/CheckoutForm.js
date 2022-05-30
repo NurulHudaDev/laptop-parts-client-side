@@ -18,7 +18,7 @@ const CheckoutForm = ({order,total}) => {
     const{_id, name, email} = order;
 
     useEffect( () =>{
-      fetch('http://localhost:5000/create-payment-intent',{
+      fetch('https://dry-hamlet-93719.herokuapp.com/create-payment-intent',{
         method: "POST",
         headers: {
           'content-type': 'application/json',
@@ -87,7 +87,7 @@ const CheckoutForm = ({order,total}) => {
           }
           console.log(payment)
 
-          fetch(`http://localhost:5000/order/${_id}`,{
+          fetch(`https://dry-hamlet-93719.herokuapp.com/order/${_id}`,{
             method: "PATCH",
             headers: {
             'authorization': `Bearer ${localStorage.getItem("accessToken")}`,
