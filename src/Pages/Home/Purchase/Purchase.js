@@ -120,6 +120,7 @@ const Purchase = () => {
                   <input
                     type="number"
                     placeholder="Order Quantity"
+                    defaultValue={item.minOrder}
                     {...register("order", { required: true })}
                     className="input"
                   />
