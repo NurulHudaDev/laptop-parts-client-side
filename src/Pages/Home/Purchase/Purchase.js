@@ -20,8 +20,8 @@ const Purchase = () => {
   }, [id, item]);
 
 
-  const { register, handleSubmit, } = useForm();
-  
+  const { register, handleSubmit, watch} = useForm();
+  const orderQuantity = watch("order");
   const onSubmit = (data, e) => {
     data.item = item;
     console.log(data);
@@ -120,13 +120,15 @@ const Purchase = () => {
                   <input
                     type="number"
                     placeholder="Order Quantity"
-                    defaultValue={item.minOrder}
                     {...register("order", { required: true })}
                     className="input"
                   />
                 </div>
                 <div className="">
-                  <button  type="submit" className="btn hero-btn">
+                  <button  disabled={
+                      orderQuantity < item.minOrder ||
+                      orderQuantity > item.quantity
+                    }  type="submit" className="btn hero-btn">
                     Order Now
                   </button>
                 </div>
